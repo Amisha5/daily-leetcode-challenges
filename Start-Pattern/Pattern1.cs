@@ -12,21 +12,21 @@ public class Program
 {
     public static void Main()
     {
-        Program p = new Program();
-        p.pattern1(5);
+        Program program = new Program();
+        program.PrintSquarePattern(5);
     }
 
-    public void pattern1(int n) 
+    public void PrintSquarePattern(int size)
     {
-        if (n <= 0) return; // Edge case handling
+        if (size <= 0) return; // Edge case handling
 
-        // Create the row string once: "*****"
-        string row = new string('*', n);
-        
-        // Print the row n times
-        for(int i = 0; i < n; i++)
+        // Create the row string once based on the given size
+        string asteriskRow = new string('*', size);
+
+        // Print the row 'size' times to form a square
+        for (int rowIndex = 0; rowIndex < size; rowIndex++)
         {
-            Console.WriteLine(row);
+            Console.WriteLine(asteriskRow);
         }
     }
 }
