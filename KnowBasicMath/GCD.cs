@@ -5,10 +5,10 @@ public class Program
     public static void Main()
     {
         int gcdOne = GetGcd(9, 12);
-        Console.WriteLine($"EdgeCase One -> {gcdOne}");
+        Console.WriteLine($"GCD of 9 and 12 -> {gcdOne}");
 
         int gcdTwo = GetGcd(20, 15);
-        Console.WriteLine($"EdgeCase Two -> {gcdTwo}");
+        Console.WriteLine($"GCD of 20 and 15 -> {gcdTwo}");
     }
 
     public static int GetGcd(int firstNumber, int secondNumber)
