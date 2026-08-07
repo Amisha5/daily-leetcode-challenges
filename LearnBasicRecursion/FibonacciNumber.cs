@@ -25,7 +25,6 @@ public class Program
         {
             return 1;
         }
-
         int previous = 0;
         int current = 1;
 
